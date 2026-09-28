@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+best.onnx
+mlruns/
+# Model Weights & Export Artifacts
+*.pt
+*.onnx
+*.bin
+
+# MLflow Tracking & Databases
+mlruns/
+*.db

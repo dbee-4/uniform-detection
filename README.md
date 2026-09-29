@@ -1,4 +1,4 @@
-# Uniform Compliance Detection Service
+# Uniform Compliance Detection
 
 A video-based computer vision service for automated uniform compliance detection using YOLOv8, ONNX Runtime, FastAPI, Docker, and DagsHub MLflow.
 
@@ -28,15 +28,13 @@ A video-based computer vision service for automated uniform compliance detection
 ├── .dockerignore       # Docker build exclusions
 └── .gitignore          # Git exclusions
 
-'''text
-
-## Run with Docker
+Run with Docker
 docker run -d -p 8000:8000 dbee4/task1:v1.0
 
-## Open Swagger UI:
+Open Swagger UI:
 http://localhost:8000/docs
 
-## Local Setup
+Local Setup
 git clone https://github.com/dbee-4/uniform-detection.git
 cd uniform-detection
 
@@ -45,7 +43,7 @@ python -m venv .venv
 
 pip install -r requirements.txt
 
-## Run the API:
+Run the API:
 uvicorn app:app --reload --port 8000
 
 The project uses DagsHub + MLflow for experiment tracking, hyperparameter logging, model artifact storage, and model versioning.
